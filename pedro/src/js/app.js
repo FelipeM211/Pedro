@@ -1,5 +1,3 @@
-// app.js - Main JavaScript file for the Pedro Del Sante Consultoria Médica website
-
 // Global state for the application
 const appState = {
     currentUser: null,
