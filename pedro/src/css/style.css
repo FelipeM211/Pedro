@@ -1,0 +1,553 @@
+/* Reset e Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1a6fc9, #0d47a1);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Seções */
+.section {
+    padding: 60px 0;
+}
+
+.about-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção do Mentor */
+.mentor-section {
+    padding: 80px 0;
+}
+
+.mentor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.mentor-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-info h2 {
+    font-size: 1.2rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mentor-info h3 {
+    font-size: 2rem;
+    color: #0d47a1;
+    margin-bottom: 30px;
+}
+
+.qualifications {
+    background-color: #f5f9ff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.qualifications h4 {
+    color: #1a6fc9;
+    font-size: 1.2rem;
+}
+
+.qualifications ul {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+.qualifications li {
+    margin-bottom: 10px;
+}
+
+/* Seção de Benefícios */
+.benefits-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-card h3 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+/* Seção CTA */
+.cta-section {
+    background: linear-gradient(135deg, #1a6fc9, #0d47a1);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #0d47a1;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .mentor-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mentor-image {
+        margin-bottom: 30px;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+a.cta-button {
+    text-decoration: none;
+    display: inline-block; /* mantém o estilo de botão */
+}
+/* Navbar Styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #0d47a1;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1a6fc9;
+}
+
+.hero {
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+/*CSS DO BLOG */
+
+.blog-container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.blog-posts {
+    flex: 2;
+}
+
+.post {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.post h2 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+.post h2 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.post h2 a:hover {
+    color: #1a6fc9;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #1a6fc9;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+.sidebar-widget {
+    background: #f8fafc;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.sidebar-widget h3 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.sidebar-widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-widget li {
+    margin-bottom: 8px;
+}
+
+.sidebar-widget a {
+    color: #444;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar-widget a:hover {
+    color: #1a6fc9;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.newsletter-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a6fc9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #0d47a1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+    }
+    
+    .blog-posts {
+        padding-right: 0;
+    }
+}
+
+/* Login Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Admin Panel Styles */
+.admin-container {
+    padding: 40px 0;
+}
+
+.admin-container h1 {
+    margin-bottom: 30px;
+    color: #0d47a1;
+}
+
+.admin-posts table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-posts th, .admin-posts td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.admin-posts th {
+    background-color: #f2f7ff;
+    color: #0d47a1;
+    font-weight: 600;
+}
+
+.admin-posts tr:hover {
+    background-color: #f9f9f9;
+}
+
+.admin-posts button {
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.edit-post-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.delete-post-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+#post-form-container {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+#post-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#cancel-post-btn {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#save-post-btn {
+    background-color: #1a6fc9;
+    color: white;
+}
+
+/* Ajuste do cabeçalho do blog */
+.blog-hero {
+    background: linear-gradient(135deg, #1a6fc9, #0d47a1);
+    color: white;
+    padding: 10px 0; /* Reduzi o padding vertical */
+    text-align: center;
+    margin-top: 60px; /* Compensa a navbar fixa */
+}
+
+.blog-hero h1 {
+    font-size: 5rem; /* Título um pouco menor */
+    margin-bottom: 10px;
+}
+
+.blog-hero .subtitle {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
