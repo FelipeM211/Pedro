@@ -22,10 +22,11 @@ export default function Home() {
         <div className="container-page">
           <h2 className="text-2xl font-bold mb-4">Sobre a Consultoria</h2>
           <p className="max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+          Pedro Del Sante já conduziu mais de 160 consultorias, atendendo famílias e profissionais em sua maioria da área da saúde com cases de sucesso que unem estratégia financeira e posicionamento de mercado.
+Com uma visão completa, que integra finanças, gestão e marketing, ajuda médicos e clínicas a crescerem de forma estruturada e sustentável.
           </p>
           <p className="max-w-3xl mx-auto">
-            Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.
+          Venha fazer parte dessa trajetória de resultados.
           </p>
         </div>
       </section>
@@ -46,11 +47,13 @@ export default function Home() {
             <div className="bg-blue-50 dark:bg-slate-800 p-6 rounded-lg">
               <h4 className="text-blue-700 dark:text-blue-300 font-semibold mb-2">Qualificações Técnicas:</h4>
               <ul className="list-disc pl-6 space-y-1">
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Nullam in dui mauris. Vivamus hendrerit arcu sed erat.</li>
-                <li>Sed auctor neque eu tellus rhoncus ut eleifend nibh.</li>
-                <li>Phasellus molestie magna non est bibendum non venenatis.</li>
-                <li>Suspendisse dictum feugiat nisl ut dapibus.</li>
+                <li>Formado em Administração pela Pontifícia Universidade Católica de São Paulo (PUC-SP).</li>
+                <li>Pós-graduado em Gestão de Clínicas e Serviços de Saúde pelo Hospital Israelita Albert Einstein.</li>
+                <li>Certificado no mercado financeiro pelas certificações Anbima CPA-20 e outros programas de capacitação em investimentos.</li>
+                <li>Especialização em marketing estratégico e posicionamento digital para clínicas e profissionais da saúde.</li>
+                <li>Conhecimento prático em gestão de tráfego pago, análise de performance e estratégias de captação de pacientes.</li>
+                <li>Vivência em recrutamento e estruturação de equipes de alta performance na área médica.</li>
+                <li>Experiência comprovada com mais de 160 projetos e consultorias realizadas junto a médicos e clínicas em todo o país.</li>
               </ul>
             </div>
           </div>
@@ -63,16 +66,16 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: 'Estratégia Personalizada',
-                desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.',
+                title: 'Saúde Financeira Completa',
+                desc: 'Planejamento e estrutura para PJ e pessoa física do médico.',
               },
               {
-                title: 'Crescimento Sustentável',
-                desc: 'Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus.',
+                title: 'Gestão e Eficiência',
+                desc: 'Organize processos e equipe para escalar sua clínica.',
               },
               {
-                title: 'Oportunidades Exclusivas',
-                desc: 'Phasellus molestie magna non est bibendum non venenatis nisl tempor.',
+                title: 'Marketing Estratégico',
+                desc: 'Posicione sua marca e atraia pacientes com propósito.',
               },
             ].map((b) => (
               <motion.div key={b.title} className="p-6 rounded-lg bg-white dark:bg-slate-900 shadow border border-slate-200 dark:border-slate-800" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
