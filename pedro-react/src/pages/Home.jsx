@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { motion } from 'framer-motion'
+import { BarChart3, Briefcase, Send } from "lucide-react";
 
 export default function Home() {
   return (
@@ -59,33 +60,55 @@ Com uma visão completa, que integra finanças, gestão e marketing, ajuda médi
           </div>
         </div>
       </section>
+   
 
-      <section className="py-16 bg-slate-50 dark:bg-slate-800 rounded-xl">
-        <div className="container-page text-center">
-          <h2 className="text-2xl font-bold mb-8">Benefícios da Consultoria</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                title: 'Saúde Financeira Completa',
-                desc: 'Planejamento e estrutura para PJ e pessoa física do médico.',
-              },
-              {
-                title: 'Gestão e Eficiência',
-                desc: 'Organize processos e equipe para escalar sua clínica.',
-              },
-              {
-                title: 'Marketing Estratégico',
-                desc: 'Posicione sua marca e atraia pacientes com propósito.',
-              },
-            ].map((b) => (
-              <motion.div key={b.title} className="p-6 rounded-lg bg-white dark:bg-slate-900 shadow border border-slate-200 dark:border-slate-800" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-                <h3 className="text-xl font-semibold text-blue-800 dark:text-blue-300 mb-2">{b.title}</h3>
-                <p className="text-slate-600 dark:text-slate-300">{b.desc}</p>
-              </motion.div>
-            ))}
-          </div>
+<section className="py-16 bg-slate-50 dark:bg-slate-800 rounded-xl">
+  <div className="container-page text-center">
+    <h2 className="text-2xl font-bold mb-8">Benefícios da Consultoria</h2>
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Saúde Financeira Completa",
+              desc: "Planejamento e estrutura para PJ e pessoa física do médico.",
+              icon: (
+                <BarChart3 className="w-10 h-10 text-blue-600 dark:text-blue-300 mx-auto mb-4" />
+              ),
+            },
+            {
+              title: "Gestão e Eficiência",
+              desc: "Organize processos e equipe para escalar sua clínica.",
+              icon: (
+                <Briefcase className="w-10 h-10 text-blue-600 dark:text-blue-300 mx-auto mb-4" />
+              ),
+            },
+            {
+              title: "Marketing Estratégico",
+              desc: "Posicione sua marca e atraia pacientes com propósito.",
+              icon: (
+                <Send className="w-10 h-10 text-blue-600 dark:text-blue-300 mx-auto mb-4" />
+              ),
+            },
+          ].map((b) => (
+            <motion.div
+              key={b.title}
+              className="p-6 rounded-lg bg-white dark:bg-slate-900 shadow border border-slate-200 dark:border-slate-800"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              {b.icon}
+              <h3 className="text-xl font-semibold text-blue-800 dark:text-blue-300 mb-2">
+                {b.title}
+              </h3>
+              <p className="text-slate-600 dark:text-slate-300">{b.desc}</p>
+            </motion.div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
+  
+
+
 
       <section className="py-16 text-center">
         <div className="container-page">
